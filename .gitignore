@@ -99,6 +99,7 @@ target
 /native.handler/java-wrapper/bin
 **/build/
 hubspot_test/
+hubspot_dsl_test/
 github_test/
 gitlab_test/
 shopify_test/

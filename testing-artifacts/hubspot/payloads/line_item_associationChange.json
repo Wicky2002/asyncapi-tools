@@ -1,0 +1,1 @@
+[{"eventId":1039,"subscriptionType":"line_item.associationChange","portalId":12345678,"appId":987654,"occurredAt":1751234567890,"objectId":56039,"subscriptionId":700001,"attemptNumber":0,"changeSource":"CRM","sourceId":"userId:12345","associationType":"DEAL_TO_LINE_ITEM","fromObjectId":56039,"toObjectId":57039,"associationRemoved":false,"isPrimaryAssociation":true}]

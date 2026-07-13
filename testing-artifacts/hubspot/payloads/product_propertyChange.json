@@ -1,0 +1,1 @@
+[{"eventId":1033,"subscriptionType":"product.propertyChange","portalId":12345678,"appId":987654,"occurredAt":1751234567890,"objectId":56033,"subscriptionId":700001,"attemptNumber":0,"changeSource":"CRM","sourceId":"userId:12345","propertyName":"lifecyclestage","propertyValue":"opportunity","changeFlag":"NEW"}]

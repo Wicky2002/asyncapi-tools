@@ -1,0 +1,1 @@
+[{"eventId":1040,"subscriptionType":"line_item.merge","portalId":12345678,"appId":987654,"occurredAt":1751234567890,"objectId":56040,"subscriptionId":700001,"attemptNumber":0,"changeSource":"CRM","sourceId":"userId:12345","primaryObjectId":56040,"mergedObjectIds":[58040,59040],"newObjectId":56040,"numberOfPropertiesMoved":3}]

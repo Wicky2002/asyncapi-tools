@@ -1,0 +1,1 @@
+[{"eventId":1028,"subscriptionType":"ticket.associationChange","portalId":12345678,"appId":987654,"occurredAt":1751234567890,"objectId":56028,"subscriptionId":700001,"attemptNumber":0,"changeSource":"CRM","sourceId":"userId:12345","associationType":"TICKET_TO_CONTACT","fromObjectId":56028,"toObjectId":57028,"associationRemoved":false,"isPrimaryAssociation":true}]
