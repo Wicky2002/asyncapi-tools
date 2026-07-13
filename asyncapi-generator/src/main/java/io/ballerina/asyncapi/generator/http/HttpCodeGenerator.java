@@ -86,7 +86,7 @@ public class HttpCodeGenerator {
         validateWebhookDsl(webhookAuthConfig);
 
         // Generate Ballerina source content
-        String dataTypesContent = new DataTypesGenerator(schemas).generate();
+        String dataTypesContent = new DataTypesGenerator(schemas, webhookAuthConfig).generate();
         String serviceTypesContent = new ServiceTypesGenerator(serviceTypes).generate();
         String listenerContent = new ListenerGenerator(serviceTypes, webhookAuthConfig).generate();
         String serviceName = deriveServiceName(outputPath);
