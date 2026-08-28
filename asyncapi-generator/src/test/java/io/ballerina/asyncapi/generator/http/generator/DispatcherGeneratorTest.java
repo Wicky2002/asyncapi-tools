@@ -186,6 +186,22 @@ public class DispatcherGeneratorTest {
     }
 
     @Test
+    void testDisplayLabelDoesNotLeakIntoMatchClauseLiteral() throws GeneratorException {
+        List<HttpServiceType> serviceTypes = List.of(
+                new HttpServiceType("AccountService", List.of(
+                        new HttpRemoteFunction("qbo.account.merged.v1", "QuickBookEvent", false, "AccountMerged")
+                ))
+        );
+        EventIdentifierConfig config = new EventIdentifierConfig("body", null, "type", false);
+        String source = new DispatcherGenerator(serviceTypes, config, Optional.<WebhookAuthConfig>empty()).generate();
+
+        Assert.assertTrue(source.contains("qbo.account.merged.v1"),
+                "The match clause must still compare against the real wire event type, not the display label");
+        Assert.assertTrue(source.contains("onAccountMerged"),
+                "The dispatched remote function call should use the display-label-derived function name");
+    }
+
+    @Test
     void testEmptyServiceTypesThrows() {
         EventIdentifierConfig config = new EventIdentifierConfig("body", null, "event.type", false);
         try {
